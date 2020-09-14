@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Задание 1</h1>
+        <div><p>Введите температуру по Цельсию: <input type="number" id="tempCelsius" placeholder="только цыфры"></p></div>
+        <p id="tempFahrenheit"></p>
+        <button onclick="task1()">Fahrenheit</button>
+    </div>
+<hr>
+    <div>
+        <h1>Задание 2</h1>
+        <p>Введите значение переменной "name": <input type="text" id="name" placeholder="Значение переменной name"></p>
+        <br>
+        <p id="admin"></p>
+        <button onclick="task2()">Присвоить</button>
+    </div>
+
+<script>
+function task1() {
+    let tempCelsius;
+    let tempFahrenheit;
+
+    tempCelsius = document.getElementById('tempCelsius').value;     
+    tempFahrenheit = (9 / 5) * tempCelsius + 32;
+
+    document.getElementById("tempFahrenheit").innerHTML = "Температура по Фаренгейту: " + tempFahrenheit;
+
+
+    
+}
+function task2() {
+    let name;
+    let admin;
+
+    name = document.getElementById('name').value;
+    admin = name;
+
+    document.getElementById("admin").innerHTML = "Значение переменной \"admin\": <b>" + admin + "</b>";
+
+}
+</script>    
+    
+</body>
+</html>
