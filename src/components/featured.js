@@ -4,7 +4,7 @@ const PRICES = [52, 53, 55, 67, 69, 94, 23, 45];
 const index = {
     items: [],
     contFeatured: null,
-    imgFTPurl: 'https://raw.githubusercontent.com/kellolo/static/master/img/JS1_shop',
+    imgFTPurl: 'https://raw.githubusercontent.com/DENDarkness/static/master',
     titleFeatured: `<div class="featured-items__title">
                         <h2>Featured Items</h2>
                         <h4>Shop for items based on what we featured in this week</h4>
