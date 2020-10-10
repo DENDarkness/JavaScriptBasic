@@ -33,7 +33,7 @@ const index = {
                 </div>
                 <a href="single.html">${item.productName}</a>
                 <h3>
-                    $${item.productPrice}
+                    $${item.productPrice}.00
                     <div class="hot-offer__stars">
                         <div></div>
                         <div></div>

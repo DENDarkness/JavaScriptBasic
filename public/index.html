@@ -22,13 +22,27 @@
                 <button class="header__search-button"><i class="fas fa-search"></i></button>
             </form>
         </div>
+
+
         <div class="header__right">
-            <a href="cart.html">
+            <a href="#" class="header-basket" id="toggle-basket">
                 <img src="../src/assets/img/kart.png" alt="order">
                 <div class="header__right-qty">2</div>
             </a>
+            <div class="drop-basket hidden" id="wrapper">
+                <div id="basket">
+
+                </div>
+                <div class="drop-basket-total">
+                    <span class="drop-basket-total-name">TOTAL</span>
+                    <span class="drop-basket-total-sum">$0</span>
+                </div>
+                <a href="#" onclick="return false" class="drop-basket-button">Checkout</a>
+                <a href="#" class="drop-basket-button">Go to bascket</a>
+            </div>
             <a href="checkout.html">My Account <i class="fas fa-caret-down"></i></a>
         </div>
+
     </div>
     <div class="header_line"></div>
     <div id="nav" class="topNav"></div>
@@ -193,6 +207,7 @@
 
     <script src="../src/components/featured.js"></script>
     <script src="../src/components/navigation.js"></script>
+    <script src="../src/components/basket.js"></script>
 </body>
 
 </html>
